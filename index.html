@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+
+    <title>Konane</title>
+    <meta name="description" content="Play Konane Online">
+    <meta name="author" content="Hunan Rostomyan">
+
+    <link rel="stylesheet" href="css/main.css">
+</head><body>
+
+    <div class="toolbar">
+        <button id="action1">New Game</button>
+    </div>
+    <div class="container" id="gameRoot">Game goes here</div>
+    <script src="elm/main.js"></script>
+    <script>
+    	var gameRoot = document.getElementById('gameRoot');
+    	Elm.Main.embed(gameRoot);
+    </script>
+</body></html>

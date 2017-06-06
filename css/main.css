@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar {
+    background: #464646;
+    color: #ddd;
+    height: 37px;
+    padding: 10px;
+}
+
+.toolbar button {
+    background: #4598ae;  /* #45AE52 */
+    color: #fff;
+    border: 0;
+    padding: 9px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#board {
+    margin: 40px auto;
+    border: 1px dashed #b3b3b3;
+    overflow: hidden;
+    width: 576px;
+    padding: 25px;
+    background: #dad9d9;
+}
+
+#info {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+#pieces {
+    padding-top: 30px;
+}
+
+.piece {
+    height: 59px;
+    width: 59px;
+    float: left;
+    margin: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 5px solid #ccc;
+    background-position: center;
+    background-size: cover;
+}
+
+.piece.black {
+    background-image: url(http://localhost:8000/img/blackPiece.png);
+}
+
+.piece.white {
+    background-image: url(http://localhost:8000/img/whitePiece.png);
+}
+
+.piece.empty {
+    background: #dad9d9
+}
+
+.piece:hover {
+    border-color: #4598ae;
+}
+
+.piece.selected {
+    border-color: #4598ae;
+}
